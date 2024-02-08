@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="administration.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>System Box | Categoria</title>
+  </head>
+
+<!-- comienzo del body-->
+  <body id="body">
+    <!-- Encabezado-->
+    <header>
+      <div class="header-container">
+        <div class="wrapper-name">
+            <i class="fa-solid fa-bars bars" id="dropdown"></i>
+        </div>
+        <div class="wrapper">
+            <i class="fa-solid fa-user-large img-user user" id="toggle-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="full-content">
+      <!-- menu-->
+      <aside class="menu">
+        <div class="title_admin">
+          <h2>Administración</h2>
+        </div>
+        <nav>
+          <ul>   
+            <li class="bottom">
+              <a href="administration.html" title="Administracion de Usuario" class="active">
+                <i class="fa-solid fa-user-shield"></i>
+                <span>Usuario</span>
+              </a>
+            </li>
+            <li class="bottom">
+              <a href="accounts.html" title="Administración de Cuentas">
+                <i class="fa-solid fa-computer"></i>
+                <span>Cuentas</span>
+              </a>
+            </li>
+            <li class="bottom">
+              <a href="staff.html" title="Administración del personal">
+                <i class="fa-solid fa-users"></i>
+                <span>Personal</span>
+              </a>
+            </li>
+          </ul>
+        </nav> 
+        <div class="back">
+          <a href="home.html" title="Volver al inicio">
+            <i class="fa-solid fa-circle-left"></i>
+            <span>Volver</span>
+          </a>
+        </div> 
+      </aside>
+      
+      <main>
+        <!-- contenedor de tabs y sus cajas-->
+        <div id="stock" class="box">
+          <!--tabs-->
+          <div class="taps-box">
+            <button class="taps active">Información</button>
+            <button class="taps">Editar</button>
+          </div>
+
+          <!--cajas de contenido-->
+          <div class="content-box">
+            <!--Informacion del usuario. solo vista-->
+            <div class="block active">
+                <h1>Administración de Usuario</h1>
+              <div class="card">
+                <div class="text">
+                  <p>juanmedina</p>
+                  <h3>Juan Medina</h3>
+                  <p>Director Gerente</p>
+                </div>
+              </div>
+  
+              <div class="card">
+                <h2>Información de la Persona</h2>
+                <div class="align">
+                  <div class="input_product">
+                    <input type="number" name="ci" class="input" readonly>
+                    <span>Cedula</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="number" name="phone" class="input" readonly>
+                    <span>Teléfono</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="text" name="mail" class="input" readonly>
+                    <span>Correo electronico</span>
+                  </div>
+                </div>
+                <div class="align">
+                  <div class="input_product">
+                    <input type="text" name="municipio" class="input" readonly>
+                    <span>Municipio</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="text" name="parroquia" class="input" readonly>
+                    <span>Parroquía</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="text" name="ciudad" class="input" readonly>
+                    <span>Ciudad</span>
+                  </div>
+                </div>
+                <div class="align">
+                  <div class="input_product">
+                    <input type="text" name="estado" class="input" readonly>
+                    <span>estado</span>
+                  </div>
+                  <div class="input_product big">
+                    <input type="text" name="adress" class="input" readonly>
+                    <span>Dirección</span>
+                  </div>
+                </div>
+                
+              </div class="input_product">
+              <div class="card qsegurity">
+                <h2>Seguridad</h2>
+                <div class="input_product">
+                  <input type="password" name="contraseña" class="input" rendonly>
+                  <span>contraseña</span>
+                </div>
+                <div class="align">
+                  <div class="input_product">
+                    <input type="password" name="respuestaUno" class="input" >
+                    <span>Pregunta N°1</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="password" name="respuestaDos" class="input" >
+                    <span>Pregunta N°2</span>
+                  </div>
+                  <div class="input_product">
+                    <input type="password" name="respuestaTres" class="input" >
+                    <span>Pregunta N°3</span>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+           
+      
+            <!--editar el contenido-->
+            <div class="block" >
+              <div class="block-box">
+                <h1>Editar información</h1>
+            <div class="card">
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="nombreUsuario" class="input_visual">
+                  <span>Nombre usuario</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="nombrePersona" class="input_visual">
+                  <span>Nombre Persona</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="cargo" class="input_visual">
+                  <span>cargo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h2>Información de la Persona</h2>
+              <div class="align">
+                <div class="input_product">
+                  <input type="number" name="ci" class="input_visual">
+                  <span>Cedula</span>
+                </div>
+                <div class="input_product">
+                  <input type="number" name="phone" class="input_visual">
+                  <span>Teléfono</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="mail" class="input_visual">
+                  <span>Correo electronico</span>
+                </div>
+              </div>
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="municipio" class="input_visual">
+                  <span>Municipio</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="parroquia" class="input_visual">
+                  <span>Parroquía</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="ciudad" class="input_visual">
+                  <span>Ciudad</span>
+                </div>
+              </div>
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="estado" class="input_visual">
+                  <span>estado</span>
+                </div>
+                <div class="input_product big">
+                  <input type="text" name="adress" class="input_visual">
+                  <span>Dirección</span>
+                </div>
+              </div>
+              
+            </div class="input_product">
+            <div class="card qsegurity">
+              <h2>Preguntas de Seguridad</h2>
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="respuestaUno" class="input_visual" >
+                  <span>Pregunta N°1</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="respuestaDos" class="input_visual">
+                  <span>Respuesta N°1</span>
+                </div>
+              </div>
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="respuestaUno" class="input_visual" >
+                  <span>Pregunta N°2</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="respuestaDos" class="input_visual">
+                  <span>Respuesta N°2</span>
+                </div>
+              </div>
+              <div class="align">
+                <div class="input_product">
+                  <input type="text" name="respuestaUno" class="input_visual" >
+                  <span>Pregunta N°3</span>
+                </div>
+                <div class="input_product">
+                  <input type="text" name="respuestaDos" class="input_visual">
+                  <span>Respuesta N°3</span>
+                </div>
+              </div>
+              <h2>Ingrese su nueva contraseña</h2>
+              <div class="align">
+                <div class="input_product">
+                  <input type="password" name="respuestaUno" class="input_visual" >
+                  <span>Contrseña</span>
+                </div>
+                <div class="input_product">
+                  <input type="password" name="respuestaDos" class="input_visual">
+                  <span>Repetir contraseña</span>
+                </div>
+              </div>
+            </div>
+          
+            
+
+          </div>
+        </div>
+
+        <!--modal para editar categoria-->
+        
+        <div class="container-modal" id="modal-edit.container">
+          <div class="modal" id="modal">
+            <i class="fa-solid fa-circle-xmark close"></i>
+            <h2>EDITAR CONTENIDO</h2>
+
+            <div class="container_input_product">
+              <div class="input_product">
+                <input type="text" name="category_edit" id="category_edit" class="input inputs" >
+                <label for="category_edit">Categoria</label>
+              </div>
+            </div>
+
+            <div class="btn">
+              <button class="btn-done">Listo</button>
+            </div>
+
+          </div>
+
+        
+        </div>
+      
+      </main>  
+    </div>
+    <script src="system.js"></script>
+  </body>
+
+</html>

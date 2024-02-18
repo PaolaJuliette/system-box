@@ -1,0 +1,213 @@
+@font-face {
+    font-family: beton-extra;
+    src: url(./fonts/Beton\ CG\ ExtraBold.otf);
+}
+
+@font-face {
+    font-family: montserrat-semibold;
+    src: url(./fonts/montserrat-semibold.otf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/montserrat-regular.otf);
+}
+
+@font-face {
+    font-family: montserrat-bold ;
+    src: url(./fonts/montserrat-bold.otf);
+}
+
+@font-face {
+    font-family: montserrat-light ;
+    src: url(./fonts/montserrat-light.otf);
+}
+
+@font-face {
+    font-family: monsterfriend ;
+    src: url(./fonts/MonsterFriendFore.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --blanco: #fff;
+    --gris: #999;
+    --gris-oscuro: #636363;
+    --azul-oscuro: #012169;
+    --negro: #000000;
+    --fondo-claro: #f1f1f1;
+    --system-box:#32498c;
+    --rojo:#bc0707;
+    --amarrillo:#fade0d;
+    --fondo:#e1dff6;
+    
+}
+
+body{
+    position: relative;
+    margin-left: 0;
+    min-height: 100vh;
+    background-color: var(--fondo);
+    transition: 0.4s all;
+}
+
+
+header{
+    background-color: var(--fondo);
+    height: 80px;
+    padding: .5rem;
+}
+
+.header-container{
+    background-color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bars{
+  display: none;
+}
+
+.bars:active{
+    background-color: var(--system-box);
+}
+.wrapper-name, .wrapper{
+    display: flex;
+    align-items: center;
+    height: 37px;
+    margin: auto .8rem 0 0;
+}
+
+.header-container .icon{
+    margin: 0 .3rem 0 .8rem;
+    font-size: 19px;
+    color: var(--system-box);
+}
+
+h1{
+    margin-left: .9rem;
+    font-family: beton-extra;
+    font-size: 34px;
+    color: var(--system-box);
+}
+
+
+
+.wrapper{
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.user{
+    padding: 8px 8px 9px 8px;
+    background-color: var(--azul-oscuro);
+    border-radius: 20px;
+    color: var(--blanco);
+    font-size: 18px;
+    margin-left: .8rem;
+}
+
+.menu-user{
+    position: absolute;
+    top: 100%;
+    right: -20px;
+    width: 310px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .5s;
+    z-index: 10;
+
+}
+
+.open-user{
+    max-height: 400px;
+}
+
+.sub-menu-user{
+    background: var(--blanco);
+    padding: 20px ;
+    margin: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.info-user{
+    display: flex;
+    align-items: center;
+}
+
+.info-user h3{
+    font-family: beton-extra;
+    color: var(--system-box);
+}
+
+.sub-menu-user hr{
+    border: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--gris);
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 16px 0;
+}
+
+.sub-menu-link p{
+    width: 100%;
+    font-family: montserrat-light;
+    color: var(--gris-oscuro);
+    font-size: 14px;
+}
+
+.sub-menu-link i{
+    background-color: #e5e5e5;
+    border-radius: 50px;
+    padding: 7px;
+    margin-right: 15px;
+    font-size: 14px;
+    color: var(--gris-oscuro);
+}
+
+.sub-menu-link span{
+    font-size: 18px;
+    transition: transform .5s;
+}
+
+.sub-menu-link:hover p{
+    color:var(--azul-oscuro);
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+.sub-menu-link:hover i{
+    color: var(--system-box);
+}
+
+.back-home a{
+  bottom: 20px;
+  left: 20px;
+  color: var(--azul-oscuro);
+  font-size: 20px;
+  font-family: montserrat-semibold;
+}
+
+#mypdf{
+  width:90%;
+  height: 550px;
+  margin-left: 4.5rem;
+}

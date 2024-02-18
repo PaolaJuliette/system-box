@@ -529,21 +529,21 @@ tbody tr td{
   border-radius: 30px;
 }
 
-/*Backup and restore*/
-
-.body{
-  position: relative;
-  margin-left: 0px;
-  background-color: var(--fondo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.trash{
+  padding: 10px;
+  background-color:#bc0707 ;
+  border: none;
+  color: #d5cfd8;
+  font-family: montserrat;
+  border-radius: 10px;
 }
+
+/*Backup and restore*/
 .container-rb{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .boxs{
@@ -631,46 +631,3 @@ tbody tr td{
 
 }
 
-.logo{
-  width: 150px;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  
-} 
-
-.back-home a{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: var(--azul-oscuro);
-  font-size: 20px;
-  font-family: montserrat-semibold;
-}
-.body main{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.note{
-  width: 800px;
-  display: flex;
-  font-size: 15px;
-  color: var(--gris-oscuro);
-  margin: 1rem;
-  font-family: montserrat-semibold;
-}
-
-.note .important{
-  color: #ffa200;
- font-size: 30px;
- margin-right: 1rem;
- align-items: center;
-}
-
-.boxs h2{
-  font-family: montserrat-bold ;
-  font-size: 25px;
-  color: var(--gris-oscuro);
-  margin-bottom: 1rem;
-}
